@@ -1,5 +1,5 @@
-import { BackBtn } from "components/BackBtn/BackBtn";
-import { Box } from "components/Box";
+import { BackBtn } from "../components/BackBtn/BackBtn";
+import { Box } from "../components/Box";
 
 const NotFoundPage = () => {
   return (
