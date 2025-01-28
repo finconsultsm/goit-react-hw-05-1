@@ -1,9 +1,9 @@
 import { Box } from "../components/Box";
-import TrendingContainer from "../components/FilmsContainer/FilmsContainer";
+import TrendingContainer from "../components/MovieList/MovieList";
 import { useEffect, useState } from "react";
 import * as API from "../helpers/API";
 
-const Home = () => {
+const HomePage = () => {
   const [trending, setTrending] = useState([]);
 
   useEffect(() => {
@@ -24,4 +24,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

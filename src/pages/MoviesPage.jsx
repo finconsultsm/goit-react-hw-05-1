@@ -2,10 +2,10 @@ import { Box } from "../components/Box";
 import { SearchForm } from "../components/SearchForm/SearchForm";
 import { getSearchFilms } from "../helpers/API";
 import { useState, useEffect } from "react";
-import FilmsContainer from "../components/FilmsContainer/FilmsContainer";
+import FilmsContainer from "../components/MovieList/MovieList";
 import { useSearchParams } from "react-router-dom";
 
-const Movies = () => {
+const MoviesPage = () => {
   const [searchFilms, setSearchFilms] = useState([]);
   const [searchParams, setSearchParams] = useSearchParams();
   const productName = searchParams.get("q") ?? "";
@@ -34,4 +34,4 @@ const Movies = () => {
   );
 };
 
-export default Movies;
+export default MoviesPage;

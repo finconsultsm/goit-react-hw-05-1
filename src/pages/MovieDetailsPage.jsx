@@ -6,7 +6,7 @@ import { BackBtn } from "../components/BackBtn/BackBtn";
 import { Box } from "../components/Box";
 import MoreMovieInfo from "../components/MovieMoreInfo/MoreMovieInfo";
 
-const MovieDetails = () => {
+const MovieDetailsPage = () => {
   const { moviesId } = useParams();
   const [film, setFilm] = useState(null);
   const location = useLocation();
@@ -32,4 +32,4 @@ const MovieDetails = () => {
   );
 };
 
-export default MovieDetails;
+export default MovieDetailsPage;

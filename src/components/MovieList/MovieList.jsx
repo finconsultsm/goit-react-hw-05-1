@@ -1,17 +1,17 @@
-import FilmCards from '../FilmCard/FilmCard';
-import * as SC from './FilmsContainer.styled';
-import PropTypes from 'prop-types';
+import FilmCards from "../FilmCard/FilmCard";
+import * as SC from "./MovieList.styled";
+import PropTypes from "prop-types";
 
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation } from "react-router-dom";
 
-const FilmsContainer = ({ films }) => {
+const MovieList = ({ films }) => {
   const location = useLocation();
 
   if (!films) return;
 
   return (
     <SC.TrendingContainer>
-      {films.map(film => {
+      {films.map((film) => {
         return (
           <SC.TrendingItem key={film.id}>
             <Link to={`/movies/${film.id}`} state={{ from: location }}>
@@ -24,8 +24,8 @@ const FilmsContainer = ({ films }) => {
   );
 };
 
-FilmsContainer.propTypes = {
+MovieList.propTypes = {
   film: PropTypes.arrayOf(PropTypes.object),
 };
 
-export default FilmsContainer;
+export default MovieList;

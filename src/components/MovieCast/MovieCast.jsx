@@ -2,7 +2,7 @@ import { Box } from "../Box";
 import { getMovieCreditsById } from "../../helpers/API";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import * as SC from "./Cast.styled";
+import * as SC from "./MovieCast.styled";
 
 const Cast = () => {
   const { moviesId } = useParams();

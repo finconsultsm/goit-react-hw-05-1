@@ -2,7 +2,7 @@ import { Box } from "../Box";
 import { getMovieReviewsById } from "../../helpers/API";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import * as SC from "./Reviews.styled";
+import * as SC from "./MovieReviews.styled";
 
 const Reviews = () => {
   const { moviesId } = useParams();
